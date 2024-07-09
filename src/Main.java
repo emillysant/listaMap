@@ -20,7 +20,6 @@ public class Main {
         });
 
 //        2) Acessar Valores no Map:
-
         System.out.println(getGradeByName(student, "Luke"));
         System.out.println("Alunos com notas maiores que 8: " );
         getStudentGradeThen(student, 80.0);
@@ -31,7 +30,6 @@ public class Main {
         System.out.println(removeStudentGradeLess(iterator, 80.0));
 
 //        4) Classificar Alunos por Nota:
-
         Map<String, Student> sortedStudent = sortStudentsByGradeDescending(student);
         System.out.println(sortedStudent);
 
@@ -89,14 +87,14 @@ public class Main {
         return groupedAlunos;
     }
 
-    public static String getGradesRange(double nota) {
-        if (nota >= 90) {
+    public static String getGradesRange(double grade) {
+        if (grade >= 90) {
             return "A";
-        } else if (nota >= 80) {
+        } else if (grade >= 80) {
             return "B";
-        } else if (nota >= 70) {
+        } else if (grade >= 70) {
             return "C";
-        } else if (nota >= 60) {
+        } else if (grade >= 60) {
             return "D";
         } else {
             return "F";
